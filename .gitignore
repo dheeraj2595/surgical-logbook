@@ -1,0 +1,33 @@
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and backups
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Patient photographs and uploads
+uploads/
+photos/
+patient_photos/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
