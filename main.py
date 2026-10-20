@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 
 from database.connection import Base, engine
-from models.surgical_case import SurgicalCaseDb 
+from routers.hospitals import router as hospitals_router
 
 from fastapi import FastAPI
 from routers.cases import router as cases_router
@@ -20,3 +20,4 @@ def home():
     return{"message": "Welcome to the plastic surgery logbook API"}
 
 app.include_router(cases_router)
+app.include_router(hospitals_router)

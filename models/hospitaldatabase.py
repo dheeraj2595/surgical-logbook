@@ -4,7 +4,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from database.connection import Base
 
 
-class HospitalDB(Base):
+class HospitalDatabase(Base):
     __tablename__ = "hospitals"
 
     hospital_id: Mapped[int] = mapped_column(

@@ -50,13 +50,4 @@ class CaseAdmissionDB(Base):
         nullable=True
     )
 
-    # CaseHistory fields
-    chief_complaint: Mapped[str | None] = mapped_column(String, nullable=True)
-    past_medical_history: Mapped[str | None] = mapped_column(String, nullable=True)
-    past_surgical_history: Mapped[str | None] = mapped_column(String, nullable=True)
-    family_history: Mapped[str | None] = mapped_column(String, nullable=True)
-    social_history: Mapped[str | None] = mapped_column(String, nullable=True)
-
-    # CasePreviousMedications fields
-    medications: Mapped[str | None] = mapped_column(String, nullable=True)
-    allergies: Mapped[str | None] = mapped_column(String, nullable=True)
+   
