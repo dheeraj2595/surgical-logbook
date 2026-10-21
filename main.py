@@ -3,8 +3,10 @@ from contextlib import asynccontextmanager
 from database.connection import Base, engine
 from routers.hospitals import router as hospitals_router
 
+
 from fastapi import FastAPI
 from routers.cases import router as cases_router
+from routers.patient import router as patients_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -21,3 +23,4 @@ def home():
 
 app.include_router(cases_router)
 app.include_router(hospitals_router)
+app.include_router(patients_router)
