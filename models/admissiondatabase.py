@@ -23,7 +23,7 @@ class CaseAdmissionDB(Base):
         index=True
     )
 
-    hospital_id: Mapped[int] = mapped_column(ForeignKey("hospitals.hospital_ID"), nullable = False, index = True)
+    hospital_id: Mapped[int] = mapped_column(ForeignKey("hospitals.hospital_id"), nullable = False, index = True)
 
     hospital_ward: Mapped[str] = mapped_column(
         String(100),

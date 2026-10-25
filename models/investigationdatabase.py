@@ -25,7 +25,7 @@ class InvestigationDB(Base):
 
     # Link to the relevant postoperative follow-up
     followup_id: Mapped[int] = mapped_column(
-        ForeignKey("follow up database.followup_id"),
+        ForeignKey("follow_up_database.followupid"),
         nullable=False,
         index=True,
     )
